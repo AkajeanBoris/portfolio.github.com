@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Jean Boris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AKA <span class="highlight"> Jean Boris</span></div>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="accueil" id="accueil">
+        <div class="content" >
+            <h1>Je suis <span class="highlight">Prénom</span>, Développeur en devenir passionné par le web et le design !</h1>
+            <button>Voir mes projets</button>
+        </div>
+        <div class="illustration">
+            <img src="images/illustration.jpg" alt="Illustration de développement">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>À propos</h2>
+            <p>Je m’appelle <span class="highlight">Jean Boris AKA</span>, passionné par la création de sites web modernes et interactifs.</p>
+            <p>Je suis actuellement étudiant(e) en <span class="highlight">développement web</span>, et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.</p>
+            <p>J’adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+            <p>Passionné de l'administration des réseaux et systèmes informatique, j'exerce en tant qu'administeur systèmes et réseaux.</p>
+            <a href="#" class="cv-button">Télécharger mon CV</a>
+        </div>
+        <div class="about-image">
+            <img src="images/my_tof.jpg" alt="Photo de profil">
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project-list">
+            <div class="project">
+                <p>Application de gestion d'appel d'offre</p>
+                <p>Java, JavaFX</p>
+                <button>Voir</button>
+            </div>
+            <div class="project">
+                <p>Application de facturation</p>
+                <p>Java, JavaFX</p>
+                <button>Voir</button>
+            </div>
+            <div class="project">
+                <p>Application de localisation de véhicule</p>
+                <p>#html, #css, #js, php, mysql, Laravel</p>
+                <button>Voir</button>
+            </div>
+        </div>
+    </section>
+    <section id="competences">
+        <h2 id="tskill">Mes Compétences</h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <h3>Soft Skills</h3>
+                <div class="skill">
+                    <p>Gestion de projet</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Résolution de problème</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Adaptabilité</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skills-box">
+                <h3>Hard Skills</h3>
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>VS Code</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Vous avez un <span>projet en tête ?</span></h2>
+        <p>N'hésitez pas à me <span>contacter</span></p>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <div class="input-box">
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Jean" required>
+                </div>
+                <div class="input-box">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Boris" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="sujet">Votre sujet</label>
+                <input type="text" id="sujet" name="sujet" placeholder="Développement d'un site" required>
+            </div>
+            <div class="input-box">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    
+        <footer>
+            <p>Designed by <span>Jean Boris</span> with HTML, CSS, JS</p>
+            <p>© Tous droits réservés - 2025</p>
+        </footer>
+    </section>   
+    
+    <script src="index.js"></script>
+</body>
+</html>
